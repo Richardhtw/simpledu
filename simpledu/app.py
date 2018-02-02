@@ -6,6 +6,7 @@ simpledu
 """
 
 from flask import Flask
+from flask_migrate import Migrate
 from simpledu.config import configs
 from simpledu.models import db
 
@@ -21,6 +22,7 @@ def create_app(config):
     app.config.from_object(configs.get(config))
     # SQLAlchemy 的初始化方式改为使用 init_app
     db.init_app(app)
+    Migrate(app, db)
     register_blueprints(app)
 
     return app
