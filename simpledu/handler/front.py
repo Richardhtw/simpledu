@@ -5,7 +5,7 @@
 front 蓝图，负责首页，注册，登录等页面
 """
 
-from flask import Blueprint, render_template, flash, redirect, url_for, request
+from flask import Blueprint, render_template, flash, redirect, url_for, current_app, request
 from flask_login import login_user, logout_user, login_required
 from simpledu.models import Course, User
 from simpledu.forms import RegisterForm, LoginForm

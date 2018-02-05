@@ -18,3 +18,7 @@ a, a:hover, a:visited {
 .course img {
     height: 160px !important;
 }
+
+.nav-pagination {
+    text-align: center;
+}
