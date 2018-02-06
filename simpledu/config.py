@@ -10,6 +10,8 @@ class BaseConfig(object):
     """ 配置基类 """
     SECRET_KEY = 'make sure to set a very secret key'
     INDEX_PER_PAGE = 9
+    ADMIN_PER_PAGE = 15
+
 
 
 class DevelopmentConfig(BaseConfig):
